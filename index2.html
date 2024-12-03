@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalyanthissa Vidyalaya</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+    <style>
+        :root {
+            --glass-bg: rgba(255, 255, 255, 0.1);
+            --glass-border: rgba(255, 255, 255, 0.18);
+        }
+        body {
+            background: linear-gradient(135deg, #28a745 0%, #ffc107 100%);
+            color: white;
+            font-family: 'Inter', sans-serif;
+        }
+        .glass-effect {
+            background: var(--glass-bg);
+            backdrop-filter: blur(10px);
+            border: 1px solid var(--glass-border);
+            border-radius: 16px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            padding: 20px;
+            margin: 20px 0;
+        }
+        .navbar-brand, .nav-link {
+            color: white !important;
+        }
+        .carousel-caption h1 {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+        .carousel-caption p {
+            font-size: 1.25rem;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="#">Kalyanthissa Vidyalaya</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Section with Slider -->
+<section id="home" class="min-vh-100">
+    <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <!-- Slide 1 -->
+            <div class="carousel-item active" style="background-image: url('1jepg'); background-size: cover; height: 100vh;">
+                <div class="carousel-caption text-start">
+                    <h1>Welcome to Kalyanthissa Vidyalaya</h1>
+                    <p>Empowering young minds for a brighter future.</p>
+                    <a href="#about" class="btn btn-primary">Learn More</a>
+                </div>
+            </div>
+            <!-- Slide 2 -->
+            <div class="carousel-item" style="background-image: url('3.jepg'); background-size: cover; height: 100vh;">
+                <div class="carousel-caption">
+                    <h1>Excellence in Education</h1>
+                    <p>Dedicated to academic and extracurricular success.</p>
+                    <a href="#services" class="btn btn-primary">Our Programs</a>
+                </div>
+            </div>
+            <!-- Slide 3 -->
+            <div class="carousel-item" style="background-image: url('2.png'); background-size: cover; height: 100vh;">
+                <div class="carousel-caption text-end">
+                    <h1>Join Our Community</h1>
+                    <p>Discover opportunities for growth and learning.</p>
+                    <a href="#contact" class="btn btn-primary">Get in Touch</a>
+                </div>
+            </div>
+        </div>
+        <!-- Navigation Arrows -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+        <!-- Pagination Dots -->
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+    </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="py-5 glass-effect" data-aos="fade-up">
+    <div class="container text-center">
+        <h2>About Us</h2>
+        <p>At Kalyanthissa Vidyalaya, we are committed to fostering a nurturing and supportive environment for students to excel in academics and life.</p>
+    </div>
+</section>
+
+<!-- Services Section -->
+<section id="services" class="py-5 glass-effect" data-aos="fade-up">
+    <div class="container text-center">
+        <h2>Our Services</h2>
+        <ul>
+            <li>Quality Education</li>
+            <li>Sports and Extracurricular Activities</li>
+            <li>Student Support Programs</li>
+        </ul>
+    </div>
+</section>
+
+<!-- Projects Section -->
+<section id="projects" class="py-5 glass-effect" data-aos="fade-up">
+    <div class="container text-center">
+        <h2>Our Projects</h2>
+        <p>Explore our latest projects that showcase the talents and creativity of our students.</p>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="py-5 glass-effect" data-aos="fade-up">
+    <div class="container text-center">
+        <h2>Contact Us</h2>
+        <p>Email: Tiroshbrot123@gmail.com</p>
+        <p>Phone: +9476574933</p>
+        <p>Location: 19/A Thilakapura, Ambalangoda, Galle, Sri Lanka</p>
+    </div>
+</section>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<!-- AOS JS -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+</body>
+</html>
